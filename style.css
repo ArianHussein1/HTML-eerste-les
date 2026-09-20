@@ -1,109 +1,265 @@
+/* ALGEMEEN */
 body {
-  background-image: url(./img/black.avif);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #222222;
 }
 
-h1 {
-  color: rgb(255, 255, 255);
+/* HEADER */
+header {
+  background-color: #111111;
+  color: white;
+  padding: 20px;
   text-align: center;
 }
 
-label{
-    color: rgb(0, 0, 0);
+header h1 {
+  margin: 0;
+  color: white;
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+/* MENU */
+.menu {
+  list-style-type: none;
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline;
+  margin: 15px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #a855f7;
+}
+
+/* HOME HERO */
+.hero {
+  background-color: #6a0dad;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h2 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* SHOP NOW BUTTON */
+.button {
+  background-color: white;
+  color: #6a0dad;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #111111;
+  color: white;
+}
+
+/* MAIN */
+main {
+  width: 90%;
   margin: auto;
+  padding: 40px 0;
+}
+
+main h2 {
   text-align: center;
-  font-family: arial;
+  font-size: 30px;
+}
+
+.intro {
+  text-align: center;
+  color: #666666;
+}
+
+/* PRODUCTEN */
+.products {
+  text-align: center;
+}
+
+.product {
+  background-color: white;
+  width: 250px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px;
+  padding: 15px;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+}
+
+.product img {
+  width: 250px;
+  height: 280px;
+  object-fit: cover;
+}
+
+.product h3 {
+  color: #111111;
+}
+
+.product p {
+  color: #555555;
 }
 
 .price {
-  color: grey;
+  color: #6a0dad !important;
   font-size: 22px;
+  font-weight: bold;
 }
 
-.card button {
+/* PRODUCT BUTTON */
+.product button {
+  background-color: #6a0dad;
+  color: white;
   border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
+  border-radius: 5px;
+  padding: 12px 25px;
+  font-size: 15px;
   cursor: pointer;
-  width: 100%;
-  font-size: 18px;
 }
 
-.card button:hover {
-  opacity: 0.7;
-}
-
-p{
-    color: rgb(255, 255, 255);
-}
-
-ul {
-  list-style-type: none;
-  margin: 10;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
-}
-
-ul li {
-  float: left;
-}
-
-ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-ul li a:hover {
+.product button:hover {
   background-color: #111111;
 }
 
-input[type=text], select, textarea {
-  width: 100%; 
-  padding: 12px; 
-  border: 1px solid #ccc; 
-  border-radius: 4px; 
-  box-sizing: border-box; 
-  margin-top: 6px; 
-  margin-bottom: 16px; 
+/* ABOUT */
+.about {
+  background-color: white;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  border-left: 5px solid #6a0dad;
+  border-radius: 8px;
 }
 
+.about h2 {
+  color: #6a0dad;
+}
 
-input[type=submit] {
-  background-color: #04AA6D;
+.about h3 {
+  color: #111111;
+}
+
+/* CONTACT BOVENKANT */
+.contact-title {
+  background-color: #6a0dad;
   color: white;
-  padding: 12px 20px;
-  border: none;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.contact-title h2 {
+  font-size: 35px;
+  margin: 0;
+}
+
+.contact-title p {
+  font-size: 17px;
+}
+
+/* CONTACT FORMULIER */
+.contact-container {
+  width: 90%;
+  max-width: 650px;
+  margin: 40px auto;
+}
+
+form {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+fieldset {
+  border: 2px solid #6a0dad;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+legend {
+  color: #6a0dad;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+label {
+  font-weight: bold;
+}
+
+/* INVOERVELDEN */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+  width: 95%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #cccccc;
   border-radius: 4px;
+  font-family: Arial, sans-serif;
+}
+
+/* TEXTAREA */
+textarea {
+  resize: vertical;
+}
+
+/* SUBMIT BUTTON */
+input[type="submit"] {
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
 }
 
-input[type=submit]:hover {
-  background-color: #45a049;
+input[type="submit"]:hover {
+  background-color: #111111;
 }
 
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+/* FOOTER */
+footer {
+  background-color: #111111;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
 }
 
-input[type=text] {
-  width: 130px;
+footer p {
+  margin: 5px;
 }
 
+footer a {
+  color: #a855f7;
+  text-decoration: none;
+}
 
-input[type=text] {
-  width: 100%;
+footer a:hover {
+  color: white;
 }

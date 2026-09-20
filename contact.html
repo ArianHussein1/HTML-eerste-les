@@ -3,44 +3,196 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Football Shirts Shop</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
 
 <body>
 
-    
-    <ul>
-        <li><a href="index.html">Home</a></li>
+    <!-- HEADER -->
+    <header>
+        <h1>⚽ Football Shirts Shop</h1>
+        <ul class="menu">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="index.html#shirts">Shirts</a>
+            </li>
+            <li>
+                <a href="index.html#about">About</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
         </ul>
+    </header>
 
-    <h1>Contact</h1>
+    <!-- CONTACT TITEL -->
+    <div class="contact-title">
+        <h2>Contact Us</h2>
+        <p>
 
+            Do you have a question about a football shirt?
 
+            Send us a message!
+        </p>
+    </div>
 
-    <div class="container">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <!-- CONTACT FORMULIER -->
+    <div class="contact-container">
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
 
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <!-- NAAM -->
+                <label for="name">
 
-        <label for="country">Country</label>
-        <select id="country" name="country">
-            <option value="australia">Netherlands</option>
-            <option value="canada">France</option>
-            <option value="usa">USA</option>
-        </select>
+                    Name:
+                </label>
+                <br>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
 
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <br><br>
 
-        <input type="submit" value="Submit">
+                <!-- WACHTWOORD -->
+                <label for="password">
 
+                    Password:
+                </label>
+                <br>
+                <input type="password" id="password" name="password" placeholder="Your password" required>
+
+                <br><br>
+
+                <!-- EMAIL -->
+                <label for="email">
+
+                    Email:
+                </label>
+                <br>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                <br><br>
+
+                <!-- DATUM -->
+                <label for="date">
+
+                    Date:
+                </label>
+                <br>
+                <input type="date" id="date" name="date" required>
+
+                <br><br>
+
+                <!-- RADIO BUTTONS -->
+                <p>
+                    <strong>
+
+                        What are you contacting us about?
+                    </strong>
+                </p>
+
+                <input type="radio" id="order" name="subject" value="order" required>
+                <label for="order">
+
+                    My order
+                </label>
+
+                <br>
+
+                <input type="radio" id="shirt" name="subject" value="shirt">
+                <label for="shirt">
+
+                    Football shirt
+                </label>
+
+                <br>
+
+                <input type="radio" id="other" name="subject" value="other">
+                <label for="other">
+
+                    Other question
+                </label>
+
+                <br><br>
+
+                <!-- DROP-DOWN -->
+                <label for="club">
+
+                    Favourite club:
+                </label>
+                <br>
+                <select id="club" name="club" required>
+                    <option value="">
+
+                        Choose a club
+                    </option>
+                    <option value="real-madrid">
+
+                        Real Madrid
+                    </option>
+                    <option value="barcelona">
+
+                        Barcelona
+                    </option>
+                    <option value="manchester-united">
+
+                        Manchester United
+                    </option>
+                    <option value="ac-milan">
+
+                        AC Milan
+                    </option>
+                    <option value="other">
+
+                        Other
+                    </option>
+                </select>
+
+                <br><br>
+
+                <!-- TEXTAREA -->
+                <label for="message">
+
+                    Message:
+                </label>
+                <br>
+                <textarea id="message" name="message" rows="6" placeholder="Write your message here..."
+                    required></textarea>
+
+                <br><br>
+
+                <!-- CHECKBOX -->
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">
+
+                    I want to receive football shirt offers
+                </label>
+
+                <br><br>
+
+                <!-- SUBMIT -->
+                <input type="submit" value="Send Message">
+
+            </fieldset>
         </form>
     </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+
+            © 2026 Football Shirts Shop
+        </p>
+        <p>
+            <a href="index.html">
+
+                Back to Home
+            </a>
+        </p>
+    </footer>
 
 </body>
 
