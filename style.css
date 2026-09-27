@@ -354,3 +354,13 @@ footer a {
 footer a:hover {
   color: white;
 }
+
+.video-section figure {
+  margin: 20px 0;
+}
+
+.video-section figcaption {
+  margin-top: 10px;
+  color: #666666;
+  font-style: italic;
+}
