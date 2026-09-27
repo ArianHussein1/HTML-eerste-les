@@ -9,81 +9,115 @@
 </head>
 
 <body>
+    <!-- HEADER -->
     <header>
         <h1>⚽ Football Shirts Shop</h1>
-        <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#shirts">Shirts</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <!-- NAVIGATIE -->
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#shirts">Shirts</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="hero">
-        <h2>Welcome to Football Shirts Shop</h2>
-        <p>
-            Find football shirts from your favourite clubs.
-        </p>
-        <a class="button" href="#shirts">Shop Now</a>
-    </div>
-
+    <!-- HOOFDINHOUD -->
     <main>
-        <h2 id="shirts">Popular Football Shirts</h2>
-        <p class="intro">
-            Check out some of our most popular football shirts.
-        </p>
 
-        <div class="products">
-            <div class="product">
-                <img src="img/real madrid.avif" alt="Real Madrid football shirt" width="250" height="280">
-                <h3>Real Madrid Shirt</h3>
-                <p>
-                    Official style Real Madrid home football shirt.
-                </p>
-                <p class="price">€79.99</p>
-                <button>Add to cart</button>
+        <!-- HERO -->
+        <section class="hero">
+            <h2>Welcome to Football Shirts Shop</h2>
+            <p>
+                Find football shirts from your favourite clubs.
+            </p>
+            <a class="button" href="#shirts">
+                Shop Now
+            </a>
+        </section>
+
+        <!-- SHIRTS -->
+        <section id="shirts">
+            <h2>Popular Football Shirts</h2>
+            <p class="intro">
+                Check out some of our most popular football shirts.
+            </p>
+
+            <div class="products">
+
+                <!-- ARTICLE 1 -->
+                <article class="product">
+                    <img src="img/real madrid.avif" alt="Real Madrid football shirt" width="250" height="280">
+                    <h3>Real Madrid Shirt</h3>
+                    <p>
+                        Real Madrid home football shirt.
+                    </p>
+                    <p class="price">
+                        <strong>€79.99</strong>
+                    </p>
+                    <button type="button">
+                        Add to cart
+                    </button>
+                </article>
+
+                <!-- ARTICLE 2 -->
+                <article class="product">
+                    <img src="img/barcelona.webp" alt="Barcelona football shirt" width="250" height="280">
+                    <h3>Barcelona Shirt</h3>
+                    <p>
+                        Barcelona home football shirt.
+                    </p>
+                    <p class="price">
+                        <strong>€74.99</strong>
+                    </p>
+                    <button type="button">
+                        Add to cart
+                    </button>
+                </article>
+
+                <!-- ARTICLE 3 -->
+                <article class="product">
+                    <img src="img/man u.webp" alt="Manchester United football shirt" width="250" height="280">
+                    <h3>Manchester United Shirt</h3>
+                    <p>
+                        Manchester United home football shirt.
+                    </p>
+                    <p class="price">
+                        <strong>€69.99</strong>
+                    </p>
+                    <button type="button">
+                        Add to cart
+                    </button>
+                </article>
+
+                <!-- ARTICLE 4 -->
+                <article class="product">
+                    <img src="img/ac milan.webp" alt="AC Milan football shirt" width="250" height="280">
+                    <h3>AC Milan Shirt</h3>
+                    <p>
+                        Classic AC Milan football shirt.
+                    </p>
+                    <p class="price">
+                        <strong>€64.99</strong>
+                    </p>
+                    <button type="button">
+                        Add to cart
+                    </button>
+                </article>
             </div>
+        </section>
 
-            <div class="product">
-                <img src="img/barcelona.webp" alt="Barcelona football shirt" width="250" height="280">
-                <h3>Barcelona Shirt</h3>
-                <p>
-                    Barcelona away football shirt.
-                </p>
-                <p class="price">€74.99</p>
-                <button>Add to cart</button>
-            </div>
-
-            <div class="product">
-                <img src="img/man u.webp" alt="Manchester United football shirt" width="250" height="280">
-                <h3>Manchester United Shirt</h3>
-                <p>
-                    Manchester United third football shirt.
-                </p>
-                <p class="price">€69.99</p>
-                <button>Add to cart</button>
-            </div>
-
-            <div class="product">
-                <img src="img/ac milan.webp" alt="AC Milan football shirt" width="250" height="280">
-                <h3>AC Milan Shirt</h3>
-                <p>
-                    Classic AC Milan football shirt.
-                </p>
-                <p class="price">€64.99</p>
-                <button>Add to cart</button>
-            </div>
-        </div>
-
-        <div class="about" id="about">
+        <!-- ABOUT -->
+        <section class="about" id="about">
             <h2>About Our Shop</h2>
             <p>
-                <strong>Football Shirts Shop</strong> is a webshop for football fans.
-                We sell shirts from popular football clubs around the world.
+                <strong>Football Shirts Shop</strong> is a webshop
+                for football fans.
             </p>
             <p>
-                Our goal is to offer football shirts for every type of football fan.
-                You can find shirts from clubs in England, Spain, Italy and other countries.
+                We sell football shirts from popular football clubs
+                around the world.
             </p>
             <h3>Why choose us?</h3>
             <ul>
@@ -92,12 +126,34 @@
                 <li>Fast delivery</li>
                 <li>Good customer service</li>
             </ul>
-        </div>
+        </section>
+
+        <!-- ASIDE -->
+        <aside class="special-offer">
+            <h2>Special Offer</h2>
+            <p>
+                Get <strong>10% discount</strong> on your first
+                football shirt!
+            </p>
+        </aside>
+
+        <!-- VIDEO -->
+        <section class="video-section">
+            <h2>Football Shirt Video</h2>
+            <p>
+                Watch this video about football shirts and football.
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OMzTSI4VGxQ"
+                title="Football Shirt Video" allowfullscreen>
+            </iframe>
+        </section>
+
     </main>
 
+    <!-- FOOTER -->
     <footer>
         <p>
-            © 2026 Football Shirts Shop
+            &copy; 2026 Football Shirts Shop
         </p>
         <p>
             <a href="contact.html">Contact us</a>
